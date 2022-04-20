@@ -1,0 +1,459 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+/* ------- scroll bar styles ------ */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background-color: #c1c1c1;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #530606;
+    border-radius: 8px;
+}
+
+/* ------------ header style start ------------- */
+header {
+    padding: 15px;
+    background-color: #c1c1c1;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.head-left-sec ul{
+    align-items: center;
+}
+.head-left-sec ul li.list-group-item{
+    background-color: transparent;
+    border: 0;
+    padding: 0 10px;
+    font-weight: 600;
+}
+.head-left-sec ul li.list-group-item h2 {
+    text-shadow: 2px 2px #ff0000;
+}
+.head-right-sec {
+    display: flex;
+    justify-content: end;
+    align-items: baseline;
+    padding: 5px;
+}
+.head-right-sec button {
+    width: 140px;
+    height: 34px;
+    padding: 3px;
+    margin-right: 15px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+/* header lang sec style */
+
+.sl-nav {
+    display: inline;
+  }
+  .sl-nav ul {
+    margin:0;
+    padding:0;
+    list-style: none;
+    position: relative;
+    display: inline-block;
+  }
+  .sl-nav li {
+    cursor: pointer;
+    padding-bottom:10px;
+  }
+  .sl-nav li ul {
+    display: none;
+  }
+  .sl-nav li:hover ul {
+    position: absolute;
+    top:29px;
+    right:-15px;
+    display: block;
+    background: #fff;
+    width: 120px;
+    padding-top: 0px;
+    z-index: 1;
+    border-radius:5px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+  }
+  .sl-nav li:hover .triangle {
+    position: absolute;
+    top: 15px;
+    right: -10px;
+    z-index:10;
+    height: 14px;
+    overflow:hidden;
+    width: 30px;
+    background: transparent;
+  }
+  .sl-nav li:hover .triangle:after {
+    content: '';
+    display: block;
+    z-index: 20;
+    width: 15px;
+    transform: rotate(45deg) translateY(0px) translatex(10px);
+    height: 15px;
+    background: #fff;
+    border-radius:2px 0px 0px 0px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+  }
+  .sl-nav li ul li {
+    position: relative;
+    text-align: left;
+    background: transparent;
+    padding: 15px 15px;
+    padding-bottom:0;
+    z-index: 2;
+    font-size: 15px;
+    color: #3c3c3c;
+  }
+  .sl-nav li ul li:last-of-type {
+    padding-bottom: 15px;
+  }
+  .sl-nav li ul li span {
+    padding-left: 5px;
+  }
+  .sl-nav li ul li span:hover, .sl-nav li ul li span.active {
+    color: #146c78;
+  }
+  /* ------------ header style end ------------ */
+  .info-sec{
+      padding: 20px 40px;
+  }
+  .info-sec h2 {
+      margin-bottom: 30px;
+  }
+  .info-sec p {
+      margin-bottom: 30px;
+      font-size: 13px;
+  }
+  .info-sec div button {
+    width: 120px;
+    border: 1px solid #c1c1c1;
+    padding: 4px;
+    height: 34px;
+    font-size: 14px;
+    margin-right: 20px;
+    color: #888888;
+  }
+  .explore-sec {
+      display: flex;
+      margin: 30px 0 10px;
+  }
+  .explore-sec label {
+    margin: 0 20px;
+  }
+  .explore-sec .line {
+      border-top: 1px solid;
+      width: 50px;
+      margin-top: 10px;
+
+  }
+  .exp-cat p {
+      font-size: 9px;
+      padding-right: 0;
+      margin-bottom: 10px;
+      color: #888888;
+  }
+  .exp-cat p:nth-child(2){
+      color: #ff0000;
+  }
+  .exp-cat p span {
+      padding-right: 3px;
+  }
+  /* ------------- carousel style ------- */
+  .carousel-sec {
+      padding: 30px 0 10px;
+  }
+  .carousel-sec .carousel{
+      background-color: #acacac;
+  }
+  .carousel-sec .carousel-inner{
+      height: 350px;
+      padding-top: 20%;
+  }
+  .carousel-sec .carousel-indicators li {
+      width: 12px !important;
+      height: 12px !important;
+      border-radius: 50%;
+      background-color: #212121;
+  }
+/* ------- why use section style ------------------------ */
+.qus-sec label {
+    color: #4a4a4a;
+    font-weight: 600;
+}
+.qus-sec p{
+    color: #4a4a4a;
+    font-size: 11px;
+}
+.whyuse {
+    padding: 20px 50px;
+}
+.card-sec img {
+    border-radius: 50%;
+    margin-bottom: 30px;
+    width: 80px;
+    height: 80px;
+}
+.card-sec div{
+    color: #888888;
+    font-size: 14px;
+}
+.card-sec div h6 span {
+    color: #ff0000;
+    margin-right: 5px;
+}
+.integrate{
+    color: #bb5252 !important;
+    margin-left: 5px;
+}
+.scale {
+    color: #8bc9a9 !important;
+}
+/* -------------- feature API section ----------- */
+.feature-api {
+    background-color: #aaaaaa;
+    padding: 30px;
+}
+.feature-api h4 {
+    color: #555555;
+}
+.feature-api p {
+    color: #555555;
+    font-size: 14px;
+    text-align: center;
+}
+.feature-api p span{
+    color: #f3c323;
+}
+.api-list{
+    background: #fff;
+    padding: 15px;
+    text-align: left;
+    position: relative;
+}
+.api-list p{
+    text-align: left;
+    font-size: 11px;
+}
+.api-list label {
+    margin-top: 10px;
+    font-size: 14px;
+}
+.api-list p i{
+    color: #530606;
+    margin-right: 5px;
+}
+.offer-sec {
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    /* height: 25px; */
+    line-height: 12px;
+    color: #fff;
+}
+.offer-sec .new,.offer-sec .popular{
+    padding: 2px 18px;
+    font-size: 9px;
+    background: #a00101;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+.popular {
+    background: #04c404 !important;
+    padding: 2px 25px !important;
+    margin-right: -7px;
+}
+.offer-sec .discount {
+    padding: 2px 18px;
+    font-size: 9px;
+    margin-left: -12px;
+    background: #f3c323;
+    border-bottom-right-radius: 12px;
+}
+.only-discount {
+    padding: 2px 18px;
+    font-size: 9px;
+    margin-left: -12px;
+    background: #f3c323;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+.feature-api .col-3 {
+    padding-right: 0;
+}
+.feature-api .col-1 {
+    padding-top: 5%;
+
+}
+.micro-btn {
+    width: 150px;
+    height: 34px;
+    border: 1px solid #a00101;
+    color: #a00101;
+    border-radius: 5px;
+    background: transparent;
+}
+.try-app-info {
+    color: #888888;
+}
+.try-app-info img{
+width: 40px;
+height: 40px;
+margin-right: 10px;
+}
+.try-app-info {
+    font-size: 12px;
+}
+.try-app-info div {
+    text-align: center;
+    font-size: 12px;
+}
+.more-info {
+    width: 100px;
+    background-color: transparent;
+    border: 0;
+    margin: 0 5px;
+}
+.try-demo {
+    width: 100px;
+    background-color: #505050;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    height: 30px;
+    margin: 0 5px;
+}
+.contact {
+    padding: 20px 10px;
+    background-color: #e3e3e3;
+    text-align: center;
+    font-size: 14px;
+}
+.contact p{
+    margin-bottom: 0;
+}
+.contact p span {
+    color: #a00101;
+}
+.dep-sec label {
+    font-weight: bolder;
+    font-size: 20px;
+}
+.dep-sec label span {
+    color: #ec2424;
+    margin-right: 5px;
+}
+.dep-sec .container {
+    margin: auto;
+    width: 75%;
+}
+.dep-sec .container p {
+    font-size: 14px;
+    color: #888888;
+}
+/* -------------- mobile view header style ------------ */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+@media only screen and (min-width: 768px){
+.mobile-head {
+    display: none;
+}
+}
+/*--------------- mobile view--------------- */
+@media only screen and (min-width: 350px) and (max-width: 767px) {
+    .big-device-header {
+        display: none;
+    }
+    .explore-sec .line {
+        width: 25px;
+    }
+    .explore-sec label {
+        margin: 0 12px;
+    }
+    .dep-sec .container {
+        margin: auto;
+        width: 100%;
+    }
+    .head-right-sec {
+        display: block;
+    }
+    .head-right-sec button {
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+    .sl-nav {
+        color: #fff;
+    }
+    .lang-sec {
+        padding-left: 30px;
+    margin-top: 20px;
+    }
+}
+/*--------------- Ipad view--------------- */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .info-sec {
+        padding: 20px 0;
+    }
+    .info-sec div button {
+        width: 100px;
+    }
+    .explore-sec label {
+        margin: 0 8px;
+    }
+    .explore-sec .line {
+        width: 10px;
+    }
+    .feature-api {
+        padding: 30px 0;
+    }
+    .offer-sec {
+        right: -1px;
+    }
+    .api-list {
+        height: 275px;
+    }
+}
